@@ -23,6 +23,19 @@ First, ensure that your environment meets the necessary requirements (linux, pyt
 conda env create -f IDP_LM/torch.yml 
 conda activate torch
 ```
+* Upload the sequences to be predicted in fasta format in "examples.txt" file, and using the following commands to generate the intrinsic disorder prediction results:<br>
+```Bash
+sh run.sh examples.txt disorder
+```
+Wait until the program completed, and you can find the final prediction results:"/IDP_LM/temp/results/IDR_results.txt"
+* Using the following commands to generate four common disorder function prediction results (disorder protein binding, disorder DNA binding, disorder RNA binding, disorder flexible linker):<br>
+```Bash
+sh run.sh examples.txt function pb
+sh run.sh examples.txt function db
+sh run.sh examples.txt function rb
+sh run.sh examples.txt function linker
+```
+The corresponding result files are avaliable at "/IDP_LM/temp/results/".
   
 ## Acknowledgments
   We acknowledge with thanks the following databases and softwares used in this server:<br> 
