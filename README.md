@@ -20,9 +20,9 @@ First, ensure that your environment meets the necessary requirements (linux, pyt
 * Download model file [here](https://huggingface.co/Rostlab/prot_bert/resolve/main/pytorch_model.bin) and copy it to "/protTrans/prot_bert/".<br>
 * Create and activate the required environment of IDP-LM using the following commands:<br>
 ```Bash
-conda env create -f IDP_LM/torch.yml #Bash
-conda activate torch #Bash
-
+conda env create -f IDP_LM/torch.yml 
+conda activate torch
+```
   
 ## Acknowledgments
   We acknowledge with thanks the following databases and softwares used in this server:<br> 
