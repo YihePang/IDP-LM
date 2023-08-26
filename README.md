@@ -15,7 +15,7 @@ Figure.1 Overview of IDP-LM predictor. The input sequences were processed by thr
 
 
 ## Usage Guide
-First, ensure that your environment meets the necessary requirements (linux, python 3.5+). Then, follow these steps to use the source code:<br> 
+First, ensure that your environment meets the necessary requirements (Linux, Python 3.5+). Then, follow these steps to use the source code:<br> 
 * Download model file [here](https://huggingface.co/Rostlab/prot_t5_xl_uniref50/resolve/main/pytorch_model.bin) and copy it to "/protTrans/prot_t5_xl_uniref50/".<br>
 * Download model file [here](https://huggingface.co/Rostlab/prot_bert/resolve/main/pytorch_model.bin) and copy it to "/protTrans/prot_bert/".<br>
 * Create and activate the required environment of IDP-LM using the following commands:<br>
