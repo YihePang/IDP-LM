@@ -1,6 +1,9 @@
 # IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models
 
-This repository contains the source code used in our paper titled [_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models]. The code is implemented to realize the predictors proposed in the paper and includes examples and tutorials to assist users in utilizing the code.
+This repository contains the source code used in our paper titled [_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models]. The code is implemented to realize the predictors proposed in the paper and includes examples and tutorials to assist users in utilizing the code. <br>
+
+More materials and dataset used in this study can be obtained from (http://bliulab.net/IDP_LM/download/).
+
 
 ## Citation
 Upon the usage the users are requested to use the following citation:
