@@ -41,7 +41,7 @@ sh run.sh examples.txt function linker
 The corresponding result files are avaliable at "/IDP_LM/temp/results/".
   
 ## Acknowledgments
-  We acknowledge with thanks the following databases and softwares used in this server:<br> 
+  We acknowledge with thanks the following databases and softwares used in this study:<br> 
     		[DisProt](https://www.disprot.org/): database of intrinsically disordered proteins.<br> 
     		[MobiDB](https://mobidb.bio.unipd.it/): database of protein disorder and mobility annotations.<br> 
     		[PDB](https://www.rcsb.org/): RCSB Protein Data Bank.<br> 
