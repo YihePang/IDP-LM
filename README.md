@@ -13,10 +13,10 @@ _Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disor
 ## Introduction
 We proposed a disorder specific protein language model, IDP-BERT. The IDP-BERT was trained as a Restrictive Masked Language Model (ReMLM) to focus on the disordered regions mainly located in the N’ and C’ terminals of sequences. Furthermore, we proposed a computational predictor called IDP-LM for predicting intrinsic disorder and disorder functions by leveraging the pre-trained protein language models. IDP-LM takes the embeddings extracted from three pre-trained protein language models as the exclusive inputs, including ProtBERT, ProtT5, and IDP-BERT. The evaluation results on independent test datasets demonstrated that the IDP-LM provided high-quality prediction results for intrinsic disorder and four common disordered functions including disorder protein binding, DNA binding, RNA binding, and disorder flexible linkers.  
    
-<p align="center"> <img width="620px" alt="image" src="https://github.com/YihePang/IDP-LM/assets/38775429/0f755f82-05b1-4338-9aa0-ecc7f7f20fd6"></p>  
+<p align="center"> <img width="620px" alt="image" src="https://github.com/YihePang/IDP-LM/assets/38775429/0f755f82-05b1-4338-9aa0-ecc7f7f20fd6"></p>
 Figure.1. Protein disordered properties captured by language models. t-SNE projection visualization of disordered/structured proteins’ (a) and residues’ (b) embedding vectors extracted by three pre-trained protein language models, where the language model trained for disordered proteins (IDP-BERT) learned more fine-grained distinctions of disorder and order. The comparation of point-biserial correlation (PBC) scores calculated based on different feature representations of disordered proteins (c) and residues (d). We included template-free features (One-hot and blosum62), multiple sequence alignment based feature (PSSM), and pre-trained language model encodings (ProtBERT, ProtT5, IDP-BERT-G and IDP-BERT), where the IDP-BERT-G represents the features extracted from the IDP-BERT pretrained with the general mask language modelling. Higher PBC value reflects the information provided by features more relevant with disorder. According to our statistics in the DisProt database, disordered regions (e) are rich in polar residues compared with the ordered regions (f). The t-SNE projections of amino acids encoding vectors captured by IDP-BERT in 2D space conform with their biochemical properties (g).  
    
-
+****
    
 
 ![image](https://github.com/YihePang/IDP-LM/assets/38775429/c90910d8-4b5a-4bf4-860a-73b830cac49a)
