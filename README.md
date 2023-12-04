@@ -7,7 +7,7 @@ More materials and dataset used in this study can be obtained from (http://bliul
 
 ## Citation
 Upon the usage the users are requested to use the following citation:<br>
-_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models. PLOS Computational Biology, 2023, 19(11):e1011657. [Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011657)  
+_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models. PLOS Computational Biology, 2023, 19(11):e1011657.  [[Paper]](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011657)  
 
 
 ## Introduction
