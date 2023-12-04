@@ -7,14 +7,19 @@ More materials and dataset used in this study can be obtained from (http://bliul
 
 ## Citation
 Upon the usage the users are requested to use the following citation:<br>
-_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models. (Submitted)
+_Yihe Pang, Bin Liu_. IDP-LM: prediction of protein intrinsic disorder and disorder functions based on language models. PLOS Computational Biology, 2023, 19(11):e1011657.
+
 
 ## Introduction
 We proposed a disorder specific protein language model, IDP-BERT. The IDP-BERT was trained as a Restrictive Masked Language Model (ReMLM) to focus on the disordered regions mainly located in the N’ and C’ terminals of sequences. Furthermore, we proposed a computational predictor called IDP-LM for predicting intrinsic disorder and disorder functions by leveraging the pre-trained protein language models. IDP-LM takes the embeddings extracted from three pre-trained protein language models as the exclusive inputs, including ProtBERT, ProtT5, and IDP-BERT. The evaluation results on independent test datasets demonstrated that the IDP-LM provided high-quality prediction results for intrinsic disorder and four common disordered functions including disorder protein binding, DNA binding, RNA binding, and disorder flexible linkers.
 
+![image](https://github.com/YihePang/IDP-LM/assets/38775429/832f850c-3184-4a6f-9513-4016b1ff3d03)
+Figure.1. Protein disordered properties captured by language models. t-SNE projection visualization of disordered/structured proteins’ (a) and residues’ (b) embedding vectors extracted by three pre-trained protein language models, where the language model trained for disordered proteins (IDP-BERT) learned more fine-grained distinctions of disorder and order. The comparation of point-biserial correlation (PBC) scores calculated based on different feature representations of disordered proteins (c) and residues (d). We included template-free features (One-hot and blosum62), multiple sequence alignment based feature (PSSM), and pre-trained language model encodings (ProtBERT, ProtT5, IDP-BERT-G and IDP-BERT), where the IDP-BERT-G represents the features extracted from the IDP-BERT pretrained with the general mask language modelling. Higher PBC value reflects the information provided by features more relevant with disorder. According to our statistics in the DisProt database, disordered regions (e) are rich in polar residues compared with the ordered regions (f). The t-SNE projections of amino acids encoding vectors captured by IDP-BERT in 2D space conform with their biochemical properties (g).
+
+
 ![image](https://github.com/YihePang/IDP-LM/assets/38775429/c90910d8-4b5a-4bf4-860a-73b830cac49a)
 
-Figure.1 Overview of IDP-LM predictor. The input sequences were processed by three language models to generate the embedding vector for each residue of proteins. The IDP-BERT disordered language model adopts the BERT architecture of stacking multiple Transformer encoders, and it was self-supervised pre-trained with the sequence data collected from the MobiDB and PDB database. Three prediction layers in IDP-LM were used to calculate per-residue disordered propensity scores based on embeddings extracted from three language models, respectively. Then the model outputs the final propensity scores and binary results by fusing the calculations from three prediction layers.
+Figure.2 Overview of IDP-LM predictor. The input sequences were processed by three language models to generate the embedding vector for each residue of proteins. The IDP-BERT disordered language model adopts the BERT architecture of stacking multiple Transformer encoders, and it was self-supervised pre-trained with the sequence data collected from the MobiDB and PDB database. Three prediction layers in IDP-LM were used to calculate per-residue disordered propensity scores based on embeddings extracted from three language models, respectively. Then the model outputs the final propensity scores and binary results by fusing the calculations from three prediction layers.
 
 
 ## Usage Guide
